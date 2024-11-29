@@ -5,6 +5,9 @@ test-output/
 build/
 reports/
 logs/
+.idea
+target
+
 
 opencart.log
 ##############################
