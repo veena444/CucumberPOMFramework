@@ -1,6 +1,4 @@
-Don't forget to give a ⭐ if you find the project useful.
-
-This project demonstrates the use of Selenium WebDriver 4.x with Java with the help of Cucumber framework to automate a web application.
+This project demonstrates the use of Selenium WebDriver 4.x with Java with the help of Cucumber 7.0v framework to automate a web application.
 
 Tech Stack:
 
