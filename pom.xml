@@ -13,9 +13,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
-    <extentreports-version>5.0.8</extentreports-version>
+    <extentreports-version>5.1.1</extentreports-version>
     <aspectj.version>1.9.19</aspectj.version>
     <cucumber.version>7.18.1</cucumber.version>
     <cucumber-jvm.version>7.18.1</cucumber-jvm.version>
@@ -80,6 +81,11 @@
       <version>${extentreports-version}</version>
     </dependency>
 
+    <dependency>
+      <groupId>tech.grasshopper</groupId>
+      <artifactId>extentreports-cucumber7-adapter</artifactId>
+      <version>1.14.0</version>
+    </dependency>
 
 
     <dependency>
@@ -105,6 +111,8 @@
       <artifactId>cucumber-reporting</artifactId>
       <version>5.8.2</version>
     </dependency>
+
+
 
   </dependencies>
 
