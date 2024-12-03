@@ -1,6 +1,5 @@
 package parallel;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -10,7 +9,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/parallel/InvalidLoginPage.feature",
+        features = "@target/failedScenarios.txt",
         glue = {"parallel"},
         plugin = {
                 "pretty",
@@ -18,12 +17,11 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber-reports/Cucumber.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "timeline:test-output-thread/",
-                "rerun:target/failedScenarios.txt"
+
         },
         dryRun = false,
         monochrome = true,
         publish = true
 )
-
-public class TestRunner {
+public class RerunTestRunner {
 }

@@ -28,6 +28,7 @@ public class AppConstants {
             Arrays.asList("My Account", "My Orders", "My Affiliate Account", "Newsletter");
 
     public static final String USER_REGISTER_SUCCESS_MESSG = "Your Account Has Been Created!";
+    public static final String LOGIN_ERROR_MESSAGE = "Warning: No match for E-Mail Address and/or Password.";
 
 
 

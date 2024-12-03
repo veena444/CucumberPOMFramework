@@ -60,6 +60,12 @@ public class ElementUtil {
 		getElement(locator).sendKeys(value);
 	}
 
+	public void doSendKeys(WebElement element,String value) {
+		element.clear();
+		element.sendKeys(value);
+	}
+
+
 	public WebElement getElement(By locator) {
 		try {
 			WebElement element = driver.findElement(locator);

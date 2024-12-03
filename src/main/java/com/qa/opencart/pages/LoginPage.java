@@ -5,6 +5,7 @@ import com.qa.opencart.utils.ElementUtil;
 import com.qa.opencart.utils.TimeUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 /**
  * @author Veena Hegde
@@ -21,6 +22,7 @@ public class LoginPage {
 	private By loginBtn = By.xpath("//input[@value='Login']");
 	private By forgotPwdLink = By.linkText("Forgotten Password");
 	private By registerLink = By.linkText("Register");
+	private By loginErrorMessage = By.cssSelector("div.alert.alert-danger.alert-dismissible");
 
 	// 2. public const.. of the page:
 	public LoginPage(WebDriver driver) {
@@ -52,6 +54,33 @@ public class LoginPage {
 		eleUtil.doClick(loginBtn);
 		return new AccountsPage(driver);
 
+	}
+
+	public void doInvalidLogin(String userName, String pwd) {
+		WebElement usernameElement = eleUtil.waitForElementVisible(emailId, TimeUtil.DEFAULT_MEDIUM_TIME);
+		eleUtil.doSendKeys(usernameElement,userName);
+		eleUtil.doSendKeys(password, pwd);
+		eleUtil.doClick(loginBtn);
+//		String errorMsg = eleUtil.waitForElementVisible(loginErrorMessage, TimeUtil.DEFAULT_TIME).getText();
+//		System.out.println("Login error ===> "+ errorMsg);
+//		if(errorMsg.contains(AppConstants.LOGIN_ERROR_MESSAGE)) {
+//			return true;
+//		}
+//		else {
+//			return false;
+//		}
+	}
+
+	public String isErrorMsgDisplayed(){
+		String errorMsg = eleUtil.waitForElementVisible(loginErrorMessage, TimeUtil.DEFAULT_TIME).getText();
+		System.out.println("Login error ===> "+ errorMsg);
+		return errorMsg;
+//		if(errorMsg.contains(AppConstants.LOGIN_ERROR_MESSAGE)) {
+//			return true;
+//		}
+//		else {
+//			return false;
+//		}
 	}
 
 	public RegisterPage navigateToRegisterPage() {
