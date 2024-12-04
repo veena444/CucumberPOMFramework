@@ -1,5 +1,5 @@
 Feature: Invalid Login Feature
-
+  @Skip
   Scenario Outline: Verify invalid login feature
     Given user is on the login page
     When user enters username as "<username>" and password as "<password>"

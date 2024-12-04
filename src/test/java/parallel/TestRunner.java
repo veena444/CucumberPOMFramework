@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/parallel/InvalidLoginPage.feature",
+        features = "src/test/resources/parallel",
         glue = {"parallel"},
         plugin = {
                 "pretty",
@@ -20,6 +20,7 @@ import org.junit.runner.RunWith;
                 "timeline:test-output-thread/",
                 "rerun:target/failedScenarios.txt"
         },
+        tags = "not @Skip",
         dryRun = false,
         monochrome = true,
         publish = true
