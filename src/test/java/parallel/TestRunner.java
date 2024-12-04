@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
                 "timeline:test-output-thread/",
                 "rerun:target/failedScenarios.txt"
         },
-        tags = "not @Skip",
+      //  tags = "not @Skip",
         dryRun = false,
         monochrome = true,
         publish = true
