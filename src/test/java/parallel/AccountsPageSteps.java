@@ -49,6 +49,7 @@ public class AccountsPageSteps {
     public void user_searches_for(String searchKey) {
          searchResultsPage = accPage.doSearch(searchKey);
     }
+
     @Then("result count should be {int}")
     public void result_count_should_be(int expectedCount) {
          Assert.assertEquals(expectedCount,searchResultsPage.getSearchResultsCount());
