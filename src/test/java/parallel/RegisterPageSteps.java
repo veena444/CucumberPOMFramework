@@ -47,7 +47,7 @@ public class RegisterPageSteps {
                 if(accCreationMsg){
                     System.out.println("PASS");
                 }
-                
+
       }
 
 

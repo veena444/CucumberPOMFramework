@@ -7,7 +7,8 @@ reports/
 logs/
 .idea
 target
-
+test output
+test-output-thread
 
 opencart.log
 ##############################
