@@ -20,8 +20,6 @@ It is designed for scalable, maintainable and efficient UI test automation.
 
 **Cross-Browser Testing:** Runs tests on multiple browsers like Chrome, Firefox, and Edge.
 
-**Integration with Jenkins:** Configured for CI/CD pipeline integration.
-
 **Detailed Reporting:** Generates execution reports using ExtentReports.
 
 
@@ -36,3 +34,67 @@ Maven - Build Tool
 JUnit - Unit testing framework
 
 Design Pattern - Page Object Model (POM)
+
+
+## Prerequisites
+
+Java JDK 11 or higher
+
+Maven
+
+Cucumber
+
+Selenium WebDriver
+
+Browsers: Chrome, Firefox, Edge
+
+JUnit (for parallel execution)
+
+
+## Installation and Setup:
+
+**Clone the repository:**
+
+git clone https://github.com/veena444/CucumberPOMFramework.git
+
+**Navigate to the project directory:**
+
+cd CucumberPOMFramework
+
+**Install dependencies using Maven:**
+
+mvn clean install
+
+
+## Running Tests:
+
+**Local Execution:**
+
+Update the config.properties file to specify browser and environment configurations.
+
+Run tests using Maven:
+
+mvn test
+
+**Parallel Execution:**
+
+Enable parallel execution by configuring TestNG in the testng.xml file:
+
+<suite name="TestSuite" parallel="classes" thread-count="4">
+
+
+
+## Reporting:
+
+**ExtentReports:** Provides a comprehensive view of test execution status.
+
+**Screenshots:** Automatically attached to reports for failed scenarios.
+
+
+## Usage:
+
+* Create new feature files in the /resources/features directory to define test scenarios.
+
+* Implement corresponding step definitions in the /src/test/java/com/framework/steps package.
+
+* Update config.properties to modify test settings like browser type, environment, and base URL.
