@@ -36,7 +36,7 @@ JUnit - Unit testing framework
 Design Pattern - Page Object Model (POM)
 
 
-## Prerequisites
+## Prerequisites:
 
 Java JDK 11 or higher
 
