@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/parallel/RegisterPage.feature",
+        features = "src/test/resources/parallel",
         glue = {"parallel"},
         plugin = {
                 "pretty",
