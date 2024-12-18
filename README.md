@@ -35,6 +35,9 @@ JUnit - Unit testing framework
 
 Design Pattern - Page Object Model (POM)
 
+Reports : Extent Spark Report & Extent pdf Report
+
+
 
 ## Prerequisites:
 
