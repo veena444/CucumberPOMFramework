@@ -22,6 +22,8 @@ It is designed for scalable, maintainable and efficient UI test automation.
 
 **Detailed Reporting:** Generates execution reports using ExtentReports.
 
+**Integration with CI/CD:** Configured Jenkins to enable continuous testing.
+
 
 ## Tech Stack:
 
@@ -37,7 +39,7 @@ Design Pattern - Page Object Model (POM)
 
 Reports : Extent Spark Report & Extent pdf Report
 
-
+Jenkins CI/CD: Continuous Integration
 
 ## Prerequisites:
 
